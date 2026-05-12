@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description"
+    content="Guardería Pasitos, estancia infantil con actividades académicas, recreativas y control digital en Saltillo." />
+  <title>Guardería Pasitos – Estancia Infantil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/jpeg" href="img/logo.jpg" />
+</head>
+
+<body>
+
+  <!-- ════ PÁGINA PÚBLICA ════ -->
+  <div id="pagina-publica">
+
+    <nav class="nav-pub">
+      <div class="nav-logo"><img src="img/logo.jpg" alt="Pasitos" /></div>
+      <div class="nav-links">
+        <a class="nav-link" href="#servicios">Servicios</a>
+        <a class="nav-link" href="#horarios">Horarios y Precios</a>
+        <a class="nav-link" href="#nosotros">Nosotros</a>
+        <a class="nav-link" href="#galeria">Galería</a>
+        <a class="nav-link" href="#avisos">Avisos</a>
+        <a class="nav-link" href="#faq">Preguntas</a>
+        <a class="nav-link cta" href="#contacto">📞 Contáctanos</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-contenido">
+        <img class="hero-logo" src="img/logo.jpg" alt="Pasitos Estancia Infantil" />
+        <h1>Cuidamos y acompañamos los primeros pasos de tu pequeño</h1>
+        <p>Actividades académicas, recreativas y mucho amor — para que papá y mamá tengan tranquilidad y apoyo.</p>
+        <div class="hero-btns">
+          <a class="btn-hero btn-hero-main" href="#contacto">Agendar visita 🏠</a>
+          <a class="btn-hero btn-hero-sec" href="#horarios">Ver precios</a>
+        </div>
+        <div class="hero-chips">
+          <span class="hero-chip">👶 42 días – 4 años</span>
+          <span class="hero-chip">📍 2 sucursales</span>
+          <span class="hero-chip">📞 844-139-0293</span>
+          <span class="hero-chip">✅ Personal certificado</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="seccion" id="servicios">
+      <div class="sec-titulo">
+        <h2>Nuestros Servicios</h2>
+        <p>Todo lo que tu pequeño necesita en un solo lugar</p>
+        <div class="linea-deco"></div>
+      </div>
+      <div class="servicios-grid">
+        <div class="servicio-card">
+          <div class="servicio-ico">⭐</div>
+          <h3>Actividades Académicas y Recreativas</h3>
+          <p>Aprendizaje y juego en equilibrio, diseñados para cada etapa del desarrollo infantil.</p>
+        </div>
+        <div class="servicio-card">
+          <div class="servicio-ico">🤝</div>
+          <h3>Trabajo Guiado</h3>
+          <p>Acompañamiento personalizado para que cada niño avance a su propio ritmo con apoyo constante.</p>
+        </div>
+        <div class="servicio-card">
+          <div class="servicio-ico">🍽️</div>
+          <h3>Alimentación y Descanso</h3>
+          <p>Comida balanceada y tiempos de siesta supervisados para el bienestar integral del pequeño.</p>
+        </div>
+        <div class="servicio-card">
+          <div class="servicio-ico">🌱</div>
+          <h3>Apoyo en Hábitos</h3>
+          <p>Formación de rutinas saludables: orden, higiene, convivencia y autonomía desde temprana edad.</p>
+        </div>
+        <div class="servicio-card">
+          <div class="servicio-ico">🎨</div>
+          <h3>Arte y Creatividad</h3>
+          <p>Pintura, manualidades y actividades que desarrollan la expresión y motricidad fina.</p>
+        </div>
+        <div class="servicio-card">
+          <div class="servicio-ico">📱</div>
+          <h3>Control Digital</h3>
+          <p>Registro de entradas, salidas y pagos a través de nuestra aplicación móvil en tiempo real.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORARIOS Y PRECIOS -->
+    <section class="seccion seccion-alt" id="horarios">
+      <div class="sec-titulo">
+        <h2>Horarios y Precios</h2>
+        <p>Elige el plan que mejor se adapte a tu familia</p>
+        <div class="linea-deco"></div>
+      </div>
+      <div class="paquetes-wrap">
+        <div class="sucursal-tabs">
+          <button class="stab on" onclick="verSuc('tulipanes',this)">📍 Sucursal Tulipanes</button>
+          <button class="stab" onclick="verSuc('pinos',this)">📍 Sucursal Los Pinos</button>
+        </div>
+
+        <!-- TULIPANES -->
+        <div class="suc-panel visible" id="suc-tulipanes">
+          <div class="paquetes-grid">
+            <div class="paquete">
+              <h3>Medio Turno</h3>
+              <div class="horario">⏰ Mañana</div>
+              <div class="paquete-precio">desde $3,000 <span>/ mes</span></div>
+              <div class="paquete-rango">Rango: $3,000 – $3,500</div>
+              <ul>
+                <li>Actividades académicas</li>
+                <li>Alimentación incluida</li>
+                <li>Trabajo guiado</li>
+                <li>Registro digital</li>
+              </ul>
+            </div>
+            <div class="paquete destacado">
+              <div class="paquete-badge">POPULAR</div>
+              <h3>Turno Completo</h3>
+              <div class="horario">⏰ Lunes a Viernes</div>
+              <div class="paquete-precio">desde $3,000 <span>/ mes</span></div>
+              <div class="paquete-rango">Rango: $3,000 – $3,500</div>
+              <ul>
+                <li>Todo el día</li>
+                <li>Desayuno y comida</li>
+                <li>Siesta supervisada</li>
+                <li>Todas las actividades</li>
+                <li>Registro digital</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- LOS PINOS -->
+        <div class="suc-panel" id="suc-pinos">
+          <div class="paquetes-grid">
+            <div class="paquete">
+              <h3>Medio Turno</h3>
+              <div class="horario">⏰ Mañana</div>
+              <div class="paquete-precio">desde $3,300 <span>/ mes</span></div>
+              <div class="paquete-rango">Rango: $3,300 – $5,000</div>
+              <ul>
+                <li>Actividades académicas</li>
+                <li>Alimentación incluida</li>
+                <li>Trabajo guiado</li>
+                <li>Registro digital</li>
+              </ul>
+            </div>
+            <div class="paquete destacado">
+              <div class="paquete-badge">POPULAR</div>
+              <h3>Turno Completo</h3>
+              <div class="horario">⏰ Lunes a Viernes</div>
+              <div class="paquete-precio">desde $3,300 <span>/ mes</span></div>
+              <div class="paquete-rango">Rango: $3,300 – $5,000</div>
+              <ul>
+                <li>Todo el día</li>
+                <li>Desayuno y comida</li>
+                <li>Siesta supervisada</li>
+                <li>Todas las actividades</li>
+                <li>Registro digital</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-precios">
+          <p>💬 El precio exacto depende de la edad de tu pequeño y el horario. ¡Contáctanos para una cotización
+            personalizada!</p>
+          <a href="tel:8441390293">📞 Llamar: 844-139-0293</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUÉ NOSOTROS -->
+    <section class="seccion" id="nosotros">
+      <div class="sec-titulo">
+        <h2>¿Por qué elegir Pasitos?</h2>
+        <p>Aprender, jugar y sentirse seguro: eso es lo que ofrecemos cada día</p>
+        <div class="linea-deco"></div>
+      </div>
+      <div class="valores-grid">
+        <div class="valor">
+          <div class="ico">❤️</div>
+          <h4>Amor y Calidez</h4>
+          <p>Nos preocupamos por el bienestar y crecimiento de cada niño como si fuera propio.</p>
+        </div>
+        <div class="valor">
+          <div class="ico">🔒</div>
+          <h4>Seguridad Total</h4>
+          <p>Instalaciones seguras, personal de confianza y control digital de entradas y salidas.</p>
+        </div>
+        <div class="valor">
+          <div class="ico">📊</div>
+          <h4>Tranquilidad para Papás</h4>
+          <p>Control de asistencia y pagos en tiempo real desde la app. Sin sorpresas.</p>
+        </div>
+        <div class="valor">
+          <div class="ico">🎓</div>
+          <h4>Desarrollo Integral</h4>
+          <p>Actividades diseñadas para estimular cada etapa: cognitiva, motriz y social.</p>
+        </div>
+        <div class="valor">
+          <div class="ico">📍</div>
+          <h4>2 Sucursales</h4>
+          <p>Los Pinos y Tulipanes — cerca de ti en el área de Saltillo, Coahuila.</p>
+        </div>
+        <div class="valor">
+          <div class="ico">👶</div>
+          <h4>Desde 42 días</h4>
+          <p>Atendemos a los más pequeños desde los 42 días de nacido hasta los 4 años.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA REAL -->
+    <section class="seccion seccion-alt" id="galeria">
+      <div class="sec-titulo">
+        <h2>Galería</h2>
+        <p>Un vistazo a nuestras instalaciones y actividades del día a día</p>
+        <div class="linea-deco"></div>
+      </div>
+      <div class="galeria-grid">
+        <div class="galeria-item"><img src="img/Sala de juegos y estimulación temprana.jpg"
+            alt="Sala de juegos y estimulación" />
+          <div class="galeria-caption">Sala de juegos y estimulación temprana</div>
+        </div>
+        <div class="galeria-item"><img src="img/Actividades de arte y creatividad.jpg" alt="Actividad de pintura" />
+          <div class="galeria-caption">Actividades de arte y creatividad</div>
+        </div>
+        <div class="galeria-item"><img src="img/Actividades al aire libre.jpg" alt="Actividad al aire libre" />
+          <div class="galeria-caption">Actividades al aire libre</div>
+        </div>
+        <div class="galeria-item"><img src="img/Estimulación temprana para bebés.jpg"
+            alt="Estimulación temprana bebés" />
+          <div class="galeria-caption">Estimulación temprana para bebés</div>
+        </div>
+        <div class="galeria-item"><img src="img/Sucursal Tulipanes – Trabajo guiado.jpg"
+            alt="Pasitos Tulipanes – Trabajo guiado" />
+          <div class="galeria-caption">Sucursal Tulipanes – Trabajo guiado</div>
+        </div>
+        <div class="galeria-item"><img src="img/Actividades educativas y recreativas.jpg"
+            alt="Actividades educativas" />
+          <div class="galeria-caption">Actividades educativas y recreativas</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVISOS -->
+    <section class="seccion" id="avisos">
+      <div class="sec-titulo">
+        <h2>Avisos Importantes</h2>
+        <p>Mantente al día con las novedades de la guardería</p>
+        <div class="linea-deco"></div>
+      </div>
+      <div class="avisos-list" id="public-avisos-list">
+        <div style="text-align:center;padding:20px;color:var(--gris3);">Cargando avisos...</div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="seccion" id="testimonios">
+      <div class="sec-titulo">
+        <h2>Lo que dicen los papás</h2>
+        <p>La confianza de nuestras familias es nuestro mejor aval</p>
+        <div class="linea-deco"></div>
+      </div>
+      <div class="testimonios-grid">
+        <div class="testimonio-card">
+          <div class="test-estrellas">⭐⭐⭐⭐⭐</div>
+          <p>"Excelente atención, mi hijo va muy feliz y he notado mucho su avance en el lenguaje. Me encanta la app para ver sus pagos."</p>
+          <div class="test-autor">
+            <div class="test-info">
+              <strong>Laura Valdés</strong>
+              <span>Mamá de Mateo (2 años)</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio-card">
+          <div class="test-estrellas">⭐⭐⭐⭐⭐</div>
+          <p>"La seguridad que brindan es increíble. Estuve en muchas guarderías pero Pasitos es la que más tranquilidad me da."</p>
+          <div class="test-autor">
+            <div class="test-info">
+              <strong>Ricardo Gómez</strong>
+              <span>Papá de Eli (3 años)</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio-card">
+          <div class="test-estrellas">⭐⭐⭐⭐⭐</div>
+          <p>"Las maestras son muy cariñosas. Mi bebé entró de 6 meses y siempre me mantienen informada de todo. ¡Muy recomendables!"</p>
+          <div class="test-autor">
+            <div class="test-info">
+              <strong>Sofía Martínez</strong>
+              <span>Mamá de Ana (1 año)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="seccion seccion-alt" id="faq">
+      <div class="sec-titulo">
+        <h2>Preguntas Frecuentes</h2>
+        <p>Todo lo que necesitas saber antes de inscribir a tu pequeño</p>
+        <div class="linea-deco"></div>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">¿Desde qué edad aceptan niños? <span class="arr">▼</span></div>
+          <div class="faq-a">Aceptamos desde los <strong>42 días de nacido hasta los 4 años</strong> de edad.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">¿Cuáles son sus sucursales y direcciones? <span
+              class="arr">▼</span></div>
+          <div class="faq-a"><strong>Los Pinos:</strong> Huitzilopochtli #138, Col. Los
+            Pinos.<br /><strong>Tulipanes:</strong> Halita #640, Esquina con Blvd Juan Saade Murra.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">¿Cuánto cuesta la inscripción? <span class="arr">▼</span></div>
+          <div class="faq-a">Los precios varían según la sucursal, edad y horario de tu pequeño. En Tulipanes desde
+            $3,000 hasta $3,500 mensuales; en Los Pinos desde $3,300 hasta $5,000. Llámanos al
+            <strong>844-139-0293</strong> para una cotización exacta.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">¿Qué documentos necesito para inscribir a mi hijo? <span
+              class="arr">▼</span></div>
+          <div class="faq-a">Acta de nacimiento, CURP, cartilla de vacunación, comprobante de domicilio y datos de
+            contacto de emergencia.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">¿Cómo funciona el registro de entradas y salidas? <span
+              class="arr">▼</span></div>
+          <div class="faq-a">El personal registra la hora de entrada y salida de cada niño a través de nuestra app
+            móvil. Los padres pueden consultar este historial en tiempo real.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">¿Qué pasa si recojo a mi hijo fuera de horario? <span
+              class="arr">▼</span></div>
+          <div class="faq-a">Se aplica un recargo por tiempo extra, calculado automáticamente según el paquete
+            contratado.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">¿Cómo puedo realizar mis pagos? <span class="arr">▼</span></div>
+          <div class="faq-a">Aceptamos efectivo y transferencia bancaria. El estado de tu cuenta y el historial de pagos
+            lo puedes consultar desde la app.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="seccion" id="contacto">
+      <div class="sec-titulo">
+        <h2>Contáctanos</h2>
+        <p>Agenda una visita o resuélvenos tus dudas — con gusto te atendemos</p>
+        <div class="linea-deco"></div>
+      </div>
+      <div class="contacto-wrap">
+        <div class="contacto-info">
+          <h3>¡Visítanos o escríbenos!</h3>
+          <div class="suc-card">
+            <h4>📍 Sucursal Los Pinos</h4>
+            <p>Huitzilopochtli #138, Col. Los Pinos<br />Saltillo, Coahuila</p>
+          </div>
+          <div class="suc-card">
+            <h4>📍 Sucursal Tulipanes</h4>
+            <p>Halita #640, Esquina con Blvd Juan Saade Murra<br />Saltillo, Coahuila</p>
+          </div>
+          <div class="contacto-dato"><span class="ico">📞</span>
+            <div><a href="tel:8441390293">844-139-0293</a><br /><span style="font-size:.82rem;color:var(--gris3)">Lunes
+                a Viernes, horario de atención</span></div>
+          </div>
+          <div class="contacto-dato"><span class="ico">⏰</span>
+            <div>Lunes a Viernes<br />7:00 a.m. – 6:00 p.m.</div>
+          </div>
+        </div>
+        <div class="contacto-form">
+          <h3>Agendar una visita</h3>
+          <div class="form-group"><label>Nombre completo</label><input type="text" id="c-nombre"
+              placeholder="Ej. María González" />
+          </div>
+          <div class="form-group"><label>Teléfono</label><input type="tel" id="c-tel" placeholder="844-000-0000" />
+          </div>
+          <div class="form-group"><label>Sucursal de interés</label><select id="c-sucursal">
+              <option>Los Pinos – Huitzilopochtli #138</option>
+              <option>Tulipanes – Halita #640</option>
+            </select></div>
+          <div class="form-group"><label>Edad del niño</label><select id="c-edad">
+              <option>42 días – 6 meses</option>
+              <option>6 meses – 1 año</option>
+              <option>1 año</option>
+              <option>2 años</option>
+              <option>3 años</option>
+              <option>4 años</option>
+            </select></div>
+          <div class="form-group"><label>Mensaje (opcional)</label><textarea id="c-mensaje"
+              placeholder="¿Tienes alguna pregunta o comentario?"></textarea></div>
+          <button class="btn-form" onclick="enviarContacto()">Enviar solicitud 📩</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="img/logo.jpg" alt="Pasitos" />
+          <p>Cuidando a tus pequeños con amor y profesionalismo desde el primer pasito. Seguridad y desarrollo integral para tu familia.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <a href="#servicios">Servicios</a>
+          <a href="#horarios">Precios</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#galeria">Galería</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <p>📞 844-139-0293</p>
+          <p>📍 Los Pinos: Huitzilopochtli #138</p>
+          <p>📍 Tulipanes: Halita #640</p>
+          <p>Saltillo, Coahuila</p>
+        </div>
+        <div class="footer-col">
+          <h4>Horarios</h4>
+          <p>Lunes a Viernes</p>
+          <p>7:00 a.m. – 6:00 p.m.</p>
+          <div style="margin-top:20px;">
+            <a href="#contacto" class="btn-hero-main" style="padding:10px 20px; font-size:0.9rem;">Agendar Visita 🏠</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Guardería Pasitos · Todos los derechos reservados</p>
+        <div class="footer-admin-link">
+          <a href="#" onclick="cambiarModo('admin'); return false;">Acceso Administrativo 🔒</a>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Botón WhatsApp Flotante -->
+    <a href="https://wa.me/528441390293" class="btn-whatsapp" target="_blank" title="Escríbenos por WhatsApp">
+      <img src="img/whatsapp.png" alt="WhatsApp" />
+    </a>
+  </div><!-- fin pagina-publica -->
+
+
+  <!-- ════ PANEL ADMIN ════ -->
+  <div id="panel-admin">
+    <div class="topbar">
+      <div class="topbar-left">
+        <img class="topbar-logo" src="img/logo.jpg" alt="Pasitos" />
+        <div>
+          <h1>Panel de la Dueña</h1>
+          <p>Guardería Pasitos – Vista interna</p>
+        </div>
+      </div>
+      <div class="fecha-hoy"><span>Hoy</span><span id="fecha-txt">—</span></div>
+    </div>
+    <div class="nav-admin">
+      <button class="nav-abtn activo" onclick="irAdmin('resumen',this)"><span>🏠</span> Resumen</button>
+      <button class="nav-abtn" onclick="irAdmin('alumnos',this)"><span>👧👦</span> Alumnos</button>
+      <button class="nav-abtn" onclick="irAdmin('entradas',this)"><span>🟢</span> Entradas y Salidas</button>
+      <button class="nav-abtn" onclick="irAdmin('pagos',this)"><span>💰</span> Pagos</button>
+      <button class="nav-abtn" onclick="irAdmin('calendario',this)"><span>📅</span> Calendario</button>
+      <button class="nav-abtn" onclick="irAdmin('avisos',this)"><span>📢</span> Avisos</button>
+      <button class="nav-abtn" onclick="signOutSupabase()" style="color:var(--rojo); margin-top: auto;"><span>🚪</span>
+        Cerrar Sesión</button>
+    </div>
+    <div class="asec visible" id="asec-resumen">
+      <div class="cards-grid" style="margin-top:22px">
+        <div class="stat-card verde"><span class="ico-big">👶</span>
+          <div class="num">8</div>
+          <div class="lbl">Niños dentro hoy</div>
+        </div>
+        <div class="stat-card azul"><span class="ico-big">📋</span>
+          <div class="num">24</div>
+          <div class="lbl">Niños registrados</div>
+        </div>
+        <div class="stat-card naranja"><span class="ico-big">💸</span>
+          <div class="num" id="num-adeudos">3</div>
+          <div class="lbl">Adeudos pendientes</div>
+        </div>
+        <div class="stat-card rojo"><span class="ico-big">📅</span>
+          <div class="num">2</div>
+          <div class="lbl">Citas hoy</div>
+        </div>
+      </div>
+      <div class="seccion-titulo">👶 Niños en la guardería ahora</div>
+      <div class="tabla-wrap">
+        <div class="tabla-header">
+          <h3>Registro del día</h3><span id="fecha-tabla"
+            style="font-size:.8rem;color:var(--gris3);font-weight:700">—</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Niño</th>
+              <th>Hora</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Sofía Ramírez</b></td>
+              <td>07:45 a.m.</td>
+              <td><span class="chip dentro">🟢 Dentro</span></td>
+            </tr>
+            <tr>
+              <td><b>Miguel Torres</b></td>
+              <td>08:10 a.m.</td>
+              <td><span class="chip dentro">🟢 Dentro</span></td>
+            </tr>
+            <tr>
+              <td><b>Valentina Cruz</b></td>
+              <td>08:30 a.m.</td>
+              <td><span class="chip dentro">🟢 Dentro</span></td>
+            </tr>
+            <tr>
+              <td><b>Emilio Garza</b></td>
+              <td>08:45 a.m.</td>
+              <td><span class="chip fuera">⚪ Salió</span></td>
+            </tr>
+            <tr>
+              <td><b>Isabella Moreno</b></td>
+              <td>09:00 a.m.</td>
+              <td><span class="chip dentro">🟢 Dentro</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="seccion-titulo">⚠️ Adeudos que necesitan atención</div>
+      <div class="pago-card vencido">
+        <div>
+          <div class="pago-nombre">Carlos Jiménez</div>
+          <div class="pago-sub">Niño: Emilio · Sucursal Los Pinos · Abril 2026</div>
+        </div>
+        <div>
+          <div class="pago-monto">$4,200</div><span class="chip vencido">Vencido</span>
+        </div>
+      </div>
+      <div class="pago-card pendiente">
+        <div>
+          <div class="pago-nombre">Ana Sánchez</div>
+          <div class="pago-sub">Niño: Lucía · Sucursal Tulipanes · Mayo 2026</div>
+        </div>
+        <div>
+          <div class="pago-monto">$3,100</div><span class="chip pendiente">Pendiente</span>
+        </div>
+      </div>
+      <div class="pago-card pendiente">
+        <div>
+          <div class="pago-nombre">Roberto Vega</div>
+          <div class="pago-sub">Niño: Tomás · Sucursal Tulipanes · Mayo 2026</div>
+        </div>
+        <div>
+          <div class="pago-monto">$3,000</div><span class="chip pendiente">Pendiente</span>
+        </div>
+      </div>
+    </div>
+    <div class="asec" id="asec-avisos">
+      <div
+        style="margin-top:22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:18px">
+        <div class="seccion-titulo" style="margin:0">📢 Gestión de Avisos</div>
+        <button class="btn btn-naranja" onclick="openModal('aviso')">＋ Nuevo Aviso</button>
+      </div>
+      <div class="avisos-grid" id="admin-avisos-grid"
+        style="display:grid; gap:20px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
+        <div style="text-align:center;padding:20px;color:var(--gris3);grid-column:1/-1;">Cargando avisos...</div>
+      </div>
+    </div>
+    <div class="asec" id="asec-entradas">
+      <div
+        style="margin-top:22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:18px">
+        <div class="seccion-titulo" style="margin:0">🟢 Asistencia y Diario de Actividades</div>
+        <button class="btn btn-verde" onclick="openModal('asistencia')">＋ Registrar Asistencia/Diario</button>
+      </div>
+      <div class="es-grid">
+        <div class="panel">
+          <div class="panel-head verde-bg"><span>🟢</span>
+            <h3>Entradas de hoy</h3>
+          </div>
+          <div class="panel-body" id="lista-entradas">
+            <div style="text-align:center;padding:20px;color:var(--gris3)">Cargando entradas...</div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-head rojo-bg"><span>🔴</span>
+            <h3>Salidas de hoy</h3>
+          </div>
+          <div class="panel-body" id="lista-salidas">
+            <div style="text-align:center;padding:20px;color:var(--gris3)">Cargando salidas...</div>
+          </div>
+        </div>
+      </div>
+      <div class="tabla-wrap">
+        <div class="tabla-header">
+          <h3>📋 Historial de Asistencia y Reportes</h3>
+          <div style="display:flex;gap:10px;align-items:center">
+            <input type="month" id="filtro-mes-asis" onchange="renderAsistencias()"
+              style="padding:6px 12px;border:1px solid var(--gris2);border-radius:15px;font-family:inherit" />
+            <button class="btn btn-verde" style="padding:6px 12px" onclick="descargarAsistencias()">📥 Excel</button>
+            <input class="buscar" type="text" placeholder="🔍 Buscar niño..."
+              oninput="filtrarTabla(this,'tabla-hist')" />
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Niño</th>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Tipo</th>
+              <th>Notas (Diario)</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-hist">
+            <tr>
+              <td colspan="6" style="text-align:center;padding:20px;color:var(--gris3)">Cargando historial...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="asec" id="asec-pagos">
+      <div
+        style="margin-top:22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:18px">
+        <div class="seccion-titulo" style="margin:0">💰 Control de Pagos – Mayo 2026</div>
+        <div style="display:flex;gap:10px">
+          <button class="btn btn-verde" onclick="descargarPagos()">📥 Excel</button>
+          <button class="btn btn-verde" onclick="openModal('pago')">＋ Registrar Pago</button>
+        </div>
+      </div>
+      <div class="pagos-filtros">
+        <button class="filtro-btn on" onclick="filtrarPagos('todos',this)">Todos</button>
+        <button class="filtro-btn" onclick="filtrarPagos('pendiente',this)">⏳ Pendientes</button>
+        <button class="filtro-btn" onclick="filtrarPagos('vencido',this)">🔴 Vencidos</button>
+        <button class="filtro-btn" onclick="filtrarPagos('pagado',this)">✅ Pagados</button>
+      </div>
+      <div id="lista-pagos">
+        <div class="pago-card vencido" data-estado="vencido">
+          <div>
+            <div class="pago-nombre">👦 Emilio Jiménez</div>
+            <div class="pago-sub">Carlos Jiménez · Los Pinos · Abril 2026</div>
+          </div>
+          <div style="text-align:right">
+            <div class="pago-monto">$4,200</div><span class="chip vencido">Vencido</span>
+          </div><button class="btn btn-verde" onclick="marcarPagado(this)">✔ Marcar pagado</button>
+        </div>
+        <div class="pago-card pendiente" data-estado="pendiente">
+          <div>
+            <div class="pago-nombre">👧 Lucía Sánchez</div>
+            <div class="pago-sub">Ana Sánchez · Tulipanes · Mayo 2026</div>
+          </div>
+          <div style="text-align:right">
+            <div class="pago-monto">$3,100</div><span class="chip pendiente">Pendiente</span>
+          </div><button class="btn btn-verde" onclick="marcarPagado(this)">✔ Marcar pagado</button>
+        </div>
+        <div class="pago-card pendiente" data-estado="pendiente">
+          <div>
+            <div class="pago-nombre">👦 Tomás Vega</div>
+            <div class="pago-sub">Roberto Vega · Tulipanes · Mayo 2026</div>
+          </div>
+          <div style="text-align:right">
+            <div class="pago-monto">$3,000</div><span class="chip pendiente">Pendiente</span>
+          </div><button class="btn btn-verde" onclick="marcarPagado(this)">✔ Marcar pagado</button>
+        </div>
+        <div class="pago-card pagado" data-estado="pagado">
+          <div>
+            <div class="pago-nombre">👧 Sofía Ramírez</div>
+            <div class="pago-sub">Laura Ramírez · Los Pinos · Mayo 2026</div>
+          </div>
+          <div style="text-align:right">
+            <div class="pago-monto">$3,800</div><span class="chip pagado">✅ Pagado</span>
+          </div>
+        </div>
+        <div class="pago-card pagado" data-estado="pagado">
+          <div>
+            <div class="pago-nombre">👦 Miguel Torres</div>
+            <div class="pago-sub">Jorge Torres · Tulipanes · Mayo 2026</div>
+          </div>
+          <div style="text-align:right">
+            <div class="pago-monto">$3,200</div><span class="chip pagado">✅ Pagado</span>
+          </div>
+        </div>
+        <div class="pago-card pagado" data-estado="pagado">
+          <div>
+            <div class="pago-nombre">👧 Camila Reyes</div>
+            <div class="pago-sub">Sandra Reyes · Tulipanes · Mayo 2026 <b style="color:var(--rojo)">+recargo</b></div>
+          </div>
+          <div style="text-align:right">
+            <div class="pago-monto">$3,350</div><span class="chip pagado">✅ Pagado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="asec" id="asec-calendario">
+      <div
+        style="margin-top:22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:18px">
+        <div class="seccion-titulo" style="margin:0">📅 Calendario de Citas y Eventos</div>
+        <button class="btn btn-verde" onclick="openModal('cita')">＋ Agregar Cita</button>
+      </div>
+      <div class="cal-wrap">
+        <div class="cal-nav"><button class="cal-arrow" onclick="cambiarMes(-1)">‹</button>
+          <h2 id="cal-titulo"></h2><button class="cal-arrow" onclick="cambiarMes(1)">›</button>
+        </div>
+        <div class="cal-dias-lbl">
+          <span>Dom</span><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span>
+        </div>
+        <div class="cal-grid" id="cal-grid"></div>
+      </div>
+      <div class="cal-sidebar" style="margin-top:20px">
+        <h3 id="eventos-titulo">📌 Citas del mes</h3>
+        <div id="lista-eventos"></div>
+      </div>
+    </div>
+
+    <div class="asec" id="asec-alumnos">
+      <div
+        style="margin-top:22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:18px">
+        <div class="seccion-titulo" style="margin:0">👧👦 Gestión de Alumnos</div>
+        <button class="btn btn-verde" onclick="openModal('alumno')">＋ Registrar Alumno</button>
+      </div>
+      <div class="pagos-filtros">
+        <button class="filtro-btn on" onclick="filtrarAlumnos('todos',this)">Todos</button>
+        <button class="filtro-btn" onclick="filtrarAlumnos('Los Pinos',this)">📍 Los Pinos</button>
+        <button class="filtro-btn" onclick="filtrarAlumnos('Tulipanes',this)">📍 Tulipanes</button>
+      </div>
+      <div class="tabla-wrap">
+        <div class="tabla-header">
+          <h3>Lista de Alumnos</h3>
+          <div style="display:flex;gap:10px;align-items:center">
+            <button class="btn btn-verde" style="padding:6px 12px" onclick="descargarAlumnos()">📥 Excel</button>
+            <input class="buscar" type="text" id="buscar-alumno" placeholder="🔍 Buscar alumno..."
+              oninput="filtrarTabla(this,'tabla-alumnos')" />
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Edad</th>
+              <th>Sucursal</th>
+              <th>Tutor</th>
+              <th>Teléfono</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-alumnos">
+            <!-- Renderizado dinámico -->
+            <tr>
+              <td colspan="6" style="text-align:center;padding:20px;color:var(--gris3)">Cargando alumnos...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- fin panel-admin -->
+
+  <!-- MODAL -->
+  <div class="modal-bg" id="modal-bg">
+    <div class="modal"><button class="btn-cerrar" onclick="cerrarModal()">✕</button>
+      <h3 id="modal-titulo"></h3>
+      <div id="modal-body"></div>
+      <div class="modal-btns"><button class="btn btn-gris" onclick="cerrarModal()">Cancelar</button><button
+          class="btn btn-verde" onclick="guardarModal()">Guardar</button></div>
+    </div>
+  </div>
+
+  <!-- MODAL DE LOGIN -->
+  <div class="modal-bg" id="login-modal-bg">
+    <div class="modal"><button class="btn-cerrar" onclick="cerrarLoginModal()">✕</button>
+      <h3>🔒 Iniciar Sesión</h3>
+      <p style="color:var(--gris3);font-size:0.9rem;margin-bottom:15px;margin-top:5px;">Ingresa tus credenciales para
+        acceder al panel administrativo.</p>
+      <div class="form-group">
+        <label>Correo Electrónico</label>
+        <input type="email" id="login-email" placeholder="admin@guarderiapasitos.com" />
+      </div>
+      <div class="form-group">
+        <label>Contraseña</label>
+        <input type="password" id="login-pass" placeholder="••••••••" />
+      </div>
+      <div class="modal-btns">
+        <button class="btn btn-gris" onclick="cerrarLoginModal()">Cancelar</button>
+        <button class="btn btn-verde" onclick="signInWithEmailPassword()">Acceder</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modo-toggle">
+    <button class="modo-btn modo-publica" id="btn-publica" onclick="cambiarModo('publica')" style="display:none">🌐 Ver
+      página pública</button>
+    <button class="modo-btn modo-admin" id="btn-admin" onclick="cambiarModo('admin')">🔒 Panel de la dueña</button>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js?v=2" defer></script>
+
+</body>
+
+</html>
